@@ -21,7 +21,7 @@ const page = async ({ searchParams }: Props) => {
   const popularMovies = await getPopularMovies(page);
   const topRatedMovies = await getTopRatedMovies(page);
   const upcomingMovies = await getUpcomingMovies(page);
-  const discoverMovies = await getDiscoverMovies(page);
+  const discoverMovies = await getDiscoverMovies();
 
   return (
     <>
